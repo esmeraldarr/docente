@@ -1,0 +1,1 @@
+﻿/* Fix to enable development in Flash CS4 */package org.libspark.flartoolkit.core.labeling {public interface IFLARDummy {}}

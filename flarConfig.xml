@@ -1,0 +1,52 @@
+﻿<!-- this file specifies configurations for FLARManager. -->
+<!-- to use this file to initialize FLARManager, pass its path into FLARManager.initFromFile(). -->
+<!-- note that all relative paths listed here must be relative to the .swf location; absolute paths may also be used. -->
+
+<flar_config>
+	<!-- source settings -->
+	<flarSourceSettings
+		sourceWidth="320"
+		sourceHeight="240"
+		displayWidth="640"
+		displayHeight="480"
+		framerate="30"
+		downsampleRatio="1" />
+
+	<!-- miscellaneous FLARManager settings -->
+	<flarManagerSettings
+		mirrorDisplay="true"
+		smoothing="3">
+		<smoother className="FLARMatrixSmoother_Average" />
+		<thresholdAdapter className="DrunkWalkThresholdAdapter" speed="0.3" bias="-0.1" />
+	</flarManagerSettings>
+	
+	<!-- location of camera parameters file, e.g. FLARCameraParams.dat or camera_para.dat. -->
+	<cameraParamsFile path="FLARCameraParams.dat" />
+	
+	<!-- list of file paths of patterns for FLARToolkit to detect. -->
+	<!-- @resolution specifies the resolution at which the patterns were generated. -->
+	<patterns resolution="16" patternToBorderRatio="0.5" minConfidence="0.5">
+		<pattern path="./marcador/a.pat" />
+		<pattern path="./marcador/b.pat" />
+		<pattern path="./marcador/c.pat" />
+		<pattern path="./marcador/d.pat" />
+		<pattern path="./marcador/e.pat" />
+		<pattern path="./marcador/f.pat" />
+		<pattern path="./marcador/g.pat" />
+		<pattern path="./marcador/marker01.pat" />
+		<pattern path="./marcador/marker02.pat" />
+		<pattern path="./marcador/marker03.pat" />
+		<pattern path="./marcador/marker04.pat" />
+		<pattern path="./marcador/marker05.pat" />
+		<pattern path="./marcador/marker06.pat" />
+		<pattern path="./marcador/marker07.pat" />
+		<pattern path="./marcador/marker08.pat" />
+		<pattern path="./marcador/marker09.pat" />
+		<pattern path="./marcador/marker10.pat" />
+		<pattern path="./marcador/marker11.pat" />
+		<pattern path="./marcador/marker12.pat" />
+		<pattern path="./marcador/marker13.pat" />
+		<pattern path="./marcador/marker14.pat" />
+	</patterns>
+	
+</flar_config>

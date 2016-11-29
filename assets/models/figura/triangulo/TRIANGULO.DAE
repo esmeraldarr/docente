@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>luceros</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  ;  </authoring_tool>
+      <source_data>file:///C:/Users/luceros/Documents/3dsMax/scenes/FINAL-cuadrado.max</source_data>
+    </contributor>
+    <created>2016-08-04T07:35:49</created>
+    <modified>2016-08-04T07:35:49</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="ColorEffectR177G148B27">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <ambient>
+              <color>0.6941177 0.5803922 0.1058824 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.6941177 0.5803922 0.1058824 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent>
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="_9_-_Default">
+      <profile_COMMON>
+        <newparam sid="blanco_jpg-surface">
+          <surface type="2D">
+            <init_from>blanco_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="blanco_jpg-sampler">
+          <sampler2D>
+            <source>blanco_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="blanco_jpg-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_3_-_Default">
+      <profile_COMMON>
+        <newparam sid="verde_jpg-surface">
+          <surface type="2D">
+            <init_from>verde_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="verde_jpg-sampler">
+          <sampler2D>
+            <source>verde_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5882353 0.5882353 0.5882353 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="verde_jpg-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="ColorEffectR177G148B27-material" name="ColorEffectR177G148B27-material">
+      <instance_effect url="#ColorEffectR177G148B27"/>
+    </material>
+    <material id="_9_-_Default-material" name="_9_-_Default">
+      <instance_effect url="#_9_-_Default"/>
+    </material>
+    <material id="_3_-_Default-material" name="_3_-_Default">
+      <instance_effect url="#_3_-_Default"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-Rectangle001" name="Rectangle001">
+      <mesh>
+        <source id="geom-Rectangle001-positions">
+          <float_array id="geom-Rectangle001-positions-array" count="6">17.23948 -13.69904 0 17.23948 13.69904 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Rectangle001-positions-array" count="2" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Rectangle001-normals">
+          <float_array id="geom-Rectangle001-normals-array" count="0"/>
+          <technique_common>
+            <accessor source="#geom-Rectangle001-normals-array" count="0" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Rectangle001-vertices">
+          <input semantic="POSITION" source="#geom-Rectangle001-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial" count="0">
+          <input semantic="VERTEX" source="#geom-Rectangle001-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Rectangle001-normals" offset="1"/>
+          <p/>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-Box001" name="Box001">
+      <mesh>
+        <source id="geom-Box001-positions">
+          <float_array id="geom-Box001-positions-array" count="24">-69.6496 -68.3724 0 69.6496 -68.3724 0 -69.6496 68.3724 0 69.6496 68.3724 0 -69.6496 -68.3724 14.74713 69.6496 -68.3724 14.74713 -69.6496 68.3724 14.74713 69.6496 68.3724 14.74713</float_array>
+          <technique_common>
+            <accessor source="#geom-Box001-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box001-normals">
+          <float_array id="geom-Box001-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0.9999999 0 0 1 0 0 0.9999999 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -0.9999999 0 0 -1 0 0 -0.9999999 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box001-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box001-map1">
+          <float_array id="geom-Box001-map1-array" count="36">0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box001-map1-array" count="12" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box001-vertices">
+          <input semantic="POSITION" source="#geom-Box001-positions"/>
+        </vertices>
+        <triangles material="_9_-_Default_1" count="12">
+          <input semantic="VERTEX" source="#geom-Box001-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box001-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box001-map1" offset="2" set="0"/>
+          <p>0 0 9 2 1 11 3 2 10 3 2 10 1 3 8 0 0 9 4 4 8 5 5 9 7 6 11 7 6 11 6 7 10 4 4 8 0 8 4 1 9 5 5 10 7 5 10 7 4 11 6 0 8 4 1 12 0 3 13 1 7 14 3 7 14 3 5 15 2 1 12 0 3 16 4 2 17 5 6 18 7 6 18 7 7 19 6 3 16 4 2 20 0 0 21 1 4 22 3 4 22 3 6 23 2 2 20 0</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <max_box>
+            <generateuvs>1</generateuvs>
+            <height>14.74713</height>
+            <heightsegments>1</heightsegments>
+            <length>136.7448</length>
+            <lengthsegments>1</lengthsegments>
+            <width>139.2992</width>
+            <widthsegments>1</widthsegments>
+          </max_box>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="geom-Pyramid001" name="Pyramid001">
+      <mesh>
+        <source id="geom-Pyramid001-positions">
+          <float_array id="geom-Pyramid001-positions-array" count="18">0 0 113.9271 -58.41947 -110.617 0 58.41947 -110.617 0 58.41947 110.617 0 -58.41947 110.617 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Pyramid001-positions-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Pyramid001-normals">
+          <float_array id="geom-Pyramid001-normals-array" count="51">0 -0.7174525 0.6966075 0 -0.7174525 0.6966075 0 -0.7174525 0.6966075 0.8898323 0 0.4562879 0.8898321 0 0.4562878 0.8898321 0 0.4562878 0 0.7174525 0.6966075 0 0.7174525 0.6966075 0 0.7174525 0.6966075 -0.8898323 0 0.4562879 -0.8898321 0 0.4562878 -0.8898321 0 0.4562878 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-Pyramid001-normals-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Pyramid001-map1">
+          <float_array id="geom-Pyramid001-map1-array" count="33">0.5 1 0 0 0 0 1 0 0 0.2359381 0 0 1.235938 0 0 0 1 0 1 1 0 1 0 0 0 0 0 0.5 0.5 0 0.5 1 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Pyramid001-map1-array" count="11" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Pyramid001-vertices">
+          <input semantic="POSITION" source="#geom-Pyramid001-positions"/>
+        </vertices>
+        <triangles material="_3_-_Default_1" count="8">
+          <input semantic="VERTEX" source="#geom-Pyramid001-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Pyramid001-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Pyramid001-map1" offset="2" set="0"/>
+          <p>0 0 0 1 1 1 2 2 2 0 3 10 2 4 3 3 5 4 0 6 0 3 7 1 4 8 2 0 9 10 4 10 3 1 11 4 1 12 5 5 13 9 2 14 6 2 14 6 5 13 9 3 15 7 3 15 7 5 13 9 4 16 8 4 16 8 5 13 9 1 12 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="verde_jpg">
+      <init_from>verde.jpg</init_from>
+    </image>
+    <image id="blanco_jpg">
+      <init_from>blanco.jpg</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Rectangle001" name="Rectangle001">
+        <translate>106.2433 20.03625 0.4442152</translate>
+        <scale>0.9934975 1 0.9169574</scale>
+        <instance_geometry url="#geom-Rectangle001">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ColorMaterial" target="#ColorEffectR177G148B27-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Box001" name="Box001">
+        <translate>-10.44888 2.027901 4.371926</translate>
+        <scale>0.9934975 1 0.9169574</scale>
+        <instance_geometry url="#geom-Box001">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_9_-_Default_1" target="#_9_-_Default-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+      <node id="node-Pyramid001" name="Pyramid001">
+        <translate>-11.1995 -17.96683 34.3543</translate>
+        <scale>1.111017 0.02661536 1.078734</scale>
+        <instance_geometry url="#geom-Pyramid001">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_3_-_Default_1" target="#_3_-_Default-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows>1</cast_shadows>
+            <primary_visibility>1</primary_visibility>
+            <receive_shadows>1</receive_shadows>
+            <secondary_visibility>1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>
